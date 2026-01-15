@@ -266,3 +266,76 @@ a, button, .button, input[type="submit"], input[type="button"], .shopify-payment
   0%, 100% { transform: rotate(15deg); }
   50% { transform: rotate(5deg); }
 }
+
+/* Confetti Styles */
+.gataria-confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.confetti-particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--gataria-primary);
+  animation: confetti-fall 2s linear forwards;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+/* Loader Styles */
+.gataria-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.gataria-loader-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.gataria-loader-icon {
+  width: 100px;
+  height: 100px;
+  animation: loader-spin 2s linear infinite;
+}
+
+/* Peek-a-boo Cat Styles */
+.gataria-peek-cat {
+  position: fixed;
+  bottom: -100px;
+  right: 50px;
+  width: 120px;
+  height: 100px;
+  z-index: 9990;
+  transition: bottom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.gataria-peek-cat.visible {
+  bottom: 0;
+}
+
+.gataria-peek-cat:hover {
+  bottom: -80px !important;
+}

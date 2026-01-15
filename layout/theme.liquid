@@ -113,5 +113,11 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+
+    <!-- Gataria Custom Elements -->
+    <div class="gataria-loader-overlay">
+      <img src="{{ 'gataria-loader.svg' | asset_url }}" class="gataria-loader-icon" alt="Loading...">
+    </div>
+    <img src="{{ 'gataria-peek-cat.svg' | asset_url }}" class="gataria-peek-cat" alt="Peek-a-boo Cat">
   </body>
 </html>
