@@ -1,0 +1,204 @@
+/* Gataria Custom Styles - Modern, Young, & Fun! */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap');
+
+:root {
+  --gataria-primary: #FF6B6B;
+  --gataria-secondary: #4ECDC4;
+  --gataria-accent: #FFE66D;
+  --gataria-dark: #292F36;
+  --gataria-light: #F7FFF7;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif !important;
+  background-color: var(--gataria-light);
+  background-image: radial-gradient(var(--gataria-secondary) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fredoka', sans-serif !important;
+  letter-spacing: 0.5px;
+  color: var(--gataria-dark);
+}
+
+/* Fun Hover Effects */
+.card-wrapper {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-wrapper:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Jelly Button Effect */
+.button:not(.button-unstyled),
+.shopify-payment-button__button--unbranded {
+  background-color: var(--gataria-primary) !important;
+  color: white !important;
+  border-radius: 50px !important;
+  border: none !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #D64545 !important;
+  /* Darker shade of primary */
+}
+
+.button:not(.button-unstyled):hover,
+.shopify-payment-button__button--unbranded:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #D64545 !important;
+}
+
+.button:not(.button-unstyled):active,
+.shopify-payment-button__button--unbranded:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #D64545 !important;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-element {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Paw Print Click Effect Styles */
+.paw-print {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23FF6B6B' d='M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3s-14.3-70.1 10.2-84.1s59.7.9 78.5 33.3zm284.4-47.5c-14.3 42.9.3 86.2 32.6 96.8s70.1-15.6 84.4-58.5s-.3-86.2-32.6-96.8s-70.1 15.6-84.4 58.5zm-28.4 178.7c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3s-14.3-70.1 10.2-84.1s59.7.9 78.5 33.3zM441.7 105.2c-32.6 96.8-70.1 15.6-84.4 58.5s-14.3 42.9 32.6 96.8s70.1-15.6 84.4-58.5s14.3-42.9-32.6-96.8zM256 224c-79.5 0-144 64.5-144 144s64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: fadeOut 1s forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(1.5);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gataria-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gataria-secondary);
+  border-radius: 20px;
+  border: 3px solid var(--gataria-light);
+}
+/* Animated Text for Hero */
+.gataria-animated-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 4px 4px 0px var(--gataria-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.gataria-animated-title span {
+  display: inline-block;
+  animation: gataria-bounce 0.6s ease-in-out infinite alternate;
+}
+
+.gataria-animated-title span:nth-child(1) { animation-delay: 0.1s; color: #FF99C8; }
+.gataria-animated-title span:nth-child(2) { animation-delay: 0.2s; color: #FCF6BD; }
+.gataria-animated-title span:nth-child(3) { animation-delay: 0.3s; color: #D0F4DE; }
+.gataria-animated-title span:nth-child(4) { animation-delay: 0.4s; color: #A9DEF9; }
+.gataria-animated-title span:nth-child(5) { animation-delay: 0.5s; color: #E4C1F9; }
+.gataria-animated-title span:nth-child(6) { animation-delay: 0.6s; color: #FF99C8; }
+.gataria-animated-title span:nth-child(7) { animation-delay: 0.7s; color: #FCF6BD; }
+
+@keyframes gataria-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* Hero Section Styles */
+.gataria-hero-section {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gataria-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  animation: cosmic-pulse 10s infinite alternate;
+}
+
+@keyframes cosmic-pulse {
+  0% { transform: scale(1); filter: hue-rotate(0deg); }
+  100% { transform: scale(1.1); filter: hue-rotate(30deg); }
+}
+
+.gataria-hero-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 40px 60px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.gataria-hero-subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .gataria-animated-title {
+    font-size: 3.5rem;
+  }
+  .gataria-hero-section {
+    height: 400px;
+  }
+}

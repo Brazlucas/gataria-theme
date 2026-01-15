@@ -1,0 +1,55 @@
+{% schema %}
+{
+  "name": "Gataria Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Estilo felino para humanos descolados"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Ver Coleção"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gataria Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="gataria-hero-section">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | image_url: width: 2000 | image_tag: class: 'gataria-hero-bg', loading: 'eager' }}
+  {% else %}
+    <img src="{{ 'gataria-hero-bg.png' | asset_url }}" class="gataria-hero-bg" alt="Gataria Psychedelic Cat" loading="eager">
+  {% endif %}
+
+  <div class="gataria-hero-content">
+    <h1 class="gataria-animated-title">
+      <span>G</span><span>a</span><span>T</span><span>a</span><span>R</span><span>i</span><span>a</span>
+    </h1>
+    <p class="gataria-hero-subtitle">{{ section.settings.subtitle }}</p>
+    
+    {% if section.settings.link != blank %}
+      <a href="{{ section.settings.link }}" class="button" style="margin-top: 20px;">
+        {{ section.settings.button_label }}
+      </a>
+    {% endif %}
+  </div>
+</div>
