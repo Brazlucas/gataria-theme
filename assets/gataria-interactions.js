@@ -76,29 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Peek-a-boo Cat Logic
-  const peekCat = document.querySelector('.gataria-peek-cat');
-  if (peekCat) {
-    const showCat = () => {
-      peekCat.classList.add('visible');
-      setTimeout(() => {
-        if (!peekCat.matches(':hover')) {
-          peekCat.classList.remove('visible');
-        }
-      }, 3000);
-    };
-
-    // Randomly show cat every 10-30 seconds
-    const scheduleNextPeek = () => {
-      const delay = 10000 + Math.random() * 20000;
-      setTimeout(() => {
-        showCat();
-        scheduleNextPeek();
-      }, delay);
-    };
-
-    scheduleNextPeek();
-  }
 
   // Loader Logic (Intercept Fetch/XHR or listen to Shopify events if possible)
   // For now, we'll simulate it on form submissions or link clicks that might trigger page loads

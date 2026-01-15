@@ -339,3 +339,84 @@ a, button, .button, input[type="submit"], input[type="button"], .shopify-payment
 .gataria-peek-cat:hover {
   bottom: -80px !important;
 }
+
+/* Support Cat & Speech Bubble */
+.gataria-support-cat-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 100px; /* Spaced from WhatsApp button */
+  z-index: 9990;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gataria-peek-cat {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative !important; /* Override previous fixed positioning */
+  bottom: auto !important;
+  right: auto !important;
+}
+
+.gataria-peek-cat:hover {
+  transform: translateY(-10px);
+}
+
+.gataria-speech-bubble {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 2px solid var(--gataria-dark);
+  margin-bottom: 10px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  color: var(--gataria-dark);
+  position: relative;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gataria-speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-right: 2px solid var(--gataria-dark);
+  border-bottom: 2px solid var(--gataria-dark);
+}
+
+.gataria-support-cat-wrapper:hover .gataria-speech-bubble {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* WhatsApp Button */
+.gataria-whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 9995;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.gataria-whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.gataria-whatsapp-button svg {
+  width: 100%;
+  height: 100%;
+}
