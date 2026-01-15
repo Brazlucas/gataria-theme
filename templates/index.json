@@ -12,9 +12,9 @@
     "gataria_marquee": {
       "type": "gataria-marquee",
       "settings": {
-        "text": "• Estampas Exclusivas ✨ • Miau! Promoções Imperdíveis 🐱 • ",
-        "background_color": "#4ECDC4",
-        "text_color": "#FFFFFF",
+        "text": "Frete Grátis para Gatos Descolados 🚚 • Estampas Exclusivas ✨ • Miau! Promoções Imperdíveis 🐱 •",
+        "background_color": "#4ecdc4",
+        "text_color": "#ffffff",
         "speed": 15
       }
     },
@@ -277,7 +277,7 @@
             "text_Jjiptp": {
               "type": "text",
               "settings": {
-                "text": "<p>Camisetas estampadas com artes inspiradoras! Venha conferir!!</p>",
+                "text": "<p>Camisetas estampadas de artes inspiradoras! Venha conferir!!</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
