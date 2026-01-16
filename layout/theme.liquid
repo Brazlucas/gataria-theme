@@ -113,5 +113,20 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+
+    <!-- Gataria Custom Elements -->
+    <div class="gataria-loader-overlay">
+      <img src="{{ 'gataria-loader.svg' | asset_url }}" class="gataria-loader-icon" alt="Loading...">
+    </div>
+    
+    <div class="gataria-support-widget">
+      <div class="gataria-cat-container">
+        <div class="gataria-speech-bubble">Posso ajudar?</div>
+        <img src="{{ 'gataria-peek-cat.svg' | asset_url }}" class="gataria-peek-cat" alt="Suporte">
+      </div>
+      <a href="https://wa.me/5511965189569" target="_blank" class="gataria-whatsapp-button" aria-label="WhatsApp">
+        <img src="{{ 'gataria-whatsapp.svg' | asset_url }}" alt="WhatsApp">
+      </a>
+    </div>
   </body>
 </html>
