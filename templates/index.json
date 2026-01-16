@@ -432,7 +432,7 @@
         "slideshow_gap": 12,
         "corner_radius": 0,
         "slide_height": "medium",
-        "content_position": "below-media",
+        "content_position": "on-media",
         "color_scheme": "",
         "icons_style": "arrows_large",
         "icons_shape": "none",
