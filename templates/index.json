@@ -12,7 +12,7 @@
     "gataria_marquee": {
       "type": "gataria-marquee",
       "settings": {
-        "text": "Frete Grátis para Gatos Descolados 🚚 • Estampas Exclusivas ✨ • Miau! Promoções Imperdíveis 🐱 •",
+        "text": "Gatos Descolados👕 • Estampas Exclusivas ✨ • Miau! Promoções Imperdíveis 🐱 •",
         "background_color": "#4ecdc4",
         "text_color": "#ffffff",
         "speed": 15
@@ -94,7 +94,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "Ver tudo",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -399,7 +399,7 @@
             "button_VBamHF": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Comprar agora",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
