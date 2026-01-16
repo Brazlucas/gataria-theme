@@ -11,6 +11,7 @@
   "sections": {
     "gataria_marquee": {
       "type": "gataria-marquee",
+      "name": "Gataria",
       "settings": {
         "text": "Gatos Descolados👕 • Estampas Exclusivas ✨ • Miau! Promoções Imperdíveis 🐱 •",
         "background_color": "#4ecdc4",
