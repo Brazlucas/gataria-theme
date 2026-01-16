@@ -229,7 +229,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/cat-t-shirt-design-art-vector-abstract_800847-86.jpg",
+            "image_1": "shopify://shop_images/WhatsApp_Image_2026-01-14_at_09.27.21.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -326,6 +326,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
+            "image_1": "shopify://shop_images/WhatsApp_Image_2026-01-14_at_09.38.39.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -431,7 +432,7 @@
         "slideshow_gap": 12,
         "corner_radius": 0,
         "slide_height": "medium",
-        "content_position": "on-media",
+        "content_position": "below-media",
         "color_scheme": "",
         "icons_style": "arrows_large",
         "icons_shape": "none",
