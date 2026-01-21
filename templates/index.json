@@ -305,7 +305,7 @@
               "type": "button",
               "settings": {
                 "label": "Ver mais",
-                "link": "shopify://collections/all",
+                "link": "shopify://collections/obras-de-artes",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
