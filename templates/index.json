@@ -326,7 +326,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/unisex-crew-neck-sweatshirt-black-front-696062fa76760.jpg",
+            "image_1": "shopify://shop_images/advogato.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -351,7 +351,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>As mais vendidas</h2>",
+                "text": "<h2>CLT Felina</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -376,7 +376,7 @@
             "text_eGcyQt": {
               "type": "text",
               "settings": {
-                "text": "<p>Confira nossas camisetas mais vendidas da semana!!</p>",
+                "text": "<p>Confira camisetas dos trabalhadores de patas!!</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -401,8 +401,8 @@
             "button_VBamHF": {
               "type": "button",
               "settings": {
-                "label": "Comprar agora",
-                "link": "shopify://collections/all",
+                "label": "Ver mais",
+                "link": "shopify://collections/profissoes-💼",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
